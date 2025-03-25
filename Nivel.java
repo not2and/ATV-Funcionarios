@@ -26,7 +26,7 @@ public enum Nivel {
                 return nivel;
             }
         }
-        return null; // ou lançar uma exceção se o código for inválido
+        return null;
     }
 
     @Override

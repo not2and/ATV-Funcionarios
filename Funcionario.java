@@ -10,7 +10,7 @@ public class Funcionario {
         this.salario = salario;
         this.nivel = Nivel.fromCodigo(nivelCodigo);
         this.afastado = afastado;
-        // Removido o desconto automático no construtor
+        
     }
 
     public String getNome() {
@@ -43,15 +43,15 @@ public class Funcionario {
 
     public void setAfastado(boolean afastado) {
         this.afastado = afastado;
-        // Removido o desconto automático no método setAfastado
+        
     }
 
     public void aplicarDescontoPorFalta() {
-        this.salario -= 1518.0 * 0.10; // Desconta 10% do salário base
+        this.salario -= 1518.0 * 0.10; 
     }
 
     public void aplicarAumentoPorHoraExtra() {
-        this.salario += 1518.0 * 0.10; // Aumenta 10% do salário base
+        this.salario += 1518.0 * 0.10; 
     }
 
     @Override
